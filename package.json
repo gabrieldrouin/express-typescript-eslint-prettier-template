@@ -2,7 +2,6 @@
   "name": "express-typescript-eslint-prettier-template",
   "version": "1.0.0",
   "description": "An Express.js template with TypeScript, ESLint and Prettier",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "tsx --watch --env-file .env src/index.ts",
