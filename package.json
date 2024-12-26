@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "tsx --watch --env-file .env src/index.ts",
-    "typecheck": "tsc --noEmit",
-    "build": "tsc",
     "start": "node --env-file .env dist/index.js",
-    "format": "prettier --write .",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
     "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
   },
