@@ -6,13 +6,14 @@
   "scripts": {
     "dev": "tsx --watch --env-file .env src/index.ts",
     "start": "node --env-file .env dist/index.js",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "type-check": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest --ui",
+    "coverage": "vitest run --coverage",
     "prepare": "husky"
   },
   "keywords": [],
@@ -26,13 +27,17 @@
     "@tsconfig/node22": "^22.0.0",
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "^2.1.8",
+    "@vitest/eslint-plugin": "^1.1.24",
+    "@vitest/ui": "^2.1.8",
     "eslint": "^9.17.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.11",
     "prettier": "^3.4.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.18.2"
+    "typescript-eslint": "^8.18.2",
+    "vitest": "^2.1.8"
   },
   "imports": {
     "#*": "./src/*"
