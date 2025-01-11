@@ -12,7 +12,9 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "vitest --ui",
+    "test": "vitest",
+    "test:run": "vitest --run",
+    "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
     "prepare": "husky"
   },

@@ -1,2 +1,3 @@
+npm run test:run
 npm run type-check
 npx lint-staged
